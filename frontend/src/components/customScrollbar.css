@@ -1,0 +1,38 @@
+/* customScrollbar.css */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 8px; /* Width of vertical scrollbar */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.5); /* Color of scrollbar thumb */
+    border-radius: 4px; /* Radius of scrollbar thumb */
+  }
+  
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2); /* Color of scrollbar track */
+  }
+  
+  .custom-scrollbar {
+    scrollbar-width: thin; /* Width of scrollbar */
+    scrollbar-color: rgba(255, 255, 255, 0.5) rgba(0, 0, 0, 0.2); /* Color of scrollbar thumb and track */
+  }
+  
+  /* Added styles for the button */
+  .button-container {
+    flex-shrink: 0; /* Prevent the button container from shrinking */
+  }
+  
+  .message-line {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+   
