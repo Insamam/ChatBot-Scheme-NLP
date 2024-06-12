@@ -4,16 +4,23 @@
       {
         "src": "backend/app.py",
         "use": "@vercel/python"
+      },
+      {
+        "src": "frontend/package.json",
+        "use": "@vercel/static-build",
+        "config": {
+          "distDir": "frontend/dist"
+        }
       }
     ],
     "routes": [
       {
-        "src": "/get_response",
+        "src": "/api/get_response",
         "dest": "/backend/app.py"
       },
       {
         "src": "/(.*)",
-        "dest": "/backend/app.py"
+        "dest": "/frontend/dist/$1"
       }
     ]
   }
