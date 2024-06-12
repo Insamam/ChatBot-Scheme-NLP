@@ -1,5 +1,4 @@
-{
-    "version": 2,
+{"version": 2,
     "builds": [
       {
         "src": "backend/app.py",
@@ -9,7 +8,7 @@
         "src": "frontend/package.json",
         "use": "@vercel/static-build",
         "config": {
-          "distDir": "frontend/dist" // Ensure this is correct
+          "distDir": "frontend/dist" 
         }
       }
     ],
@@ -24,4 +23,4 @@
       }
     ]
   }
-   
+  
