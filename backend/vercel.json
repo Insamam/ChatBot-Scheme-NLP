@@ -10,7 +10,12 @@
       {
         "src": "/api/(.*)",
         "dest": "app.py"
+      },
+      {
+        "src": "/finaldataset.xlsx",
+        "dest": "/finaldataset.xlsx"
       }
     ]
   }
+  
   
